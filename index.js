@@ -4,6 +4,8 @@
 // Завдання 1: Напишіть функцію, яка визначає довжину рядка
 
 function findStringLength(str) {
+  const findStringLength = str.length;
+  return findStringLength;
   // Використовуємо властивість length, щоб знайти довжину рядка str
 }
 
