@@ -18,6 +18,14 @@ console.log(
 // Завдання 2: Напишіть функцію, яка генерує рядок з символів на основі їх кодів Unicode
 
 function generateStringFromCharCode(code1, code2, code3, code4, code5) {
+  const generateStringFromCharCode = String.fromCharCode(
+    code1,
+    code2,
+    code3,
+    code4,
+    code5
+  );
+  return generateStringFromCharCode;
   // Використовуємо String.fromCharCode(), щоб створити рядок з символів code1, code2, code3, code4, code5 на основі їх кодів Unicode
 }
 
@@ -30,6 +38,13 @@ console.log(
 // Завдання 3: Напишіть функцію, яка генерує рядок з символів на основі їх кодів Unicode
 
 function generateStringFromCodePoint(code1, code2, code3, code4) {
+  const generateStringFromCodePoint = String.fromCodePoint(
+    code1,
+    code2,
+    code3,
+    code4
+  );
+  return generateStringFromCodePoint;
   // Використовуємо String.fromCodePoint(), щоб створити рядок з символів code1, code2, code3, code4 на основі їх кодів Unicode
 }
 
@@ -42,6 +57,8 @@ console.log(
 // Завдання 4: Напишіть функцію, яка виводить рядок з використанням String.raw
 
 function rawString() {
+  const rawString = String.raw`Привіт\u000A!`;
+  return rawString;
   // Використовуємо String.raw, щоб створити рядок "Привіт\u000A!", який ігнорує спеціальні символи
 }
 
@@ -51,6 +68,8 @@ console.log("rawString()", rawString()); // Виведе Привіт\u000A!
 // Завдання 5: Напишіть функцію, яка об'єднує два рядки
 
 function concatenateStrings(str1, str2) {
+  const concatenateStrings = str1.concat(``, str2);
+  return concatenateStrings;
   // Використовуємо метод concat(), щоб об'єднати два рядки str1 та str2
 }
 
@@ -63,6 +82,8 @@ console.log(
 // Завдання 6: Напишіть функцію, яка перевіряє, чи входить підрядок в рядок
 
 function checkIfIncludes(mainStr, subStr) {
+  const checkIfIncludes = mainStr.includes(subStr);
+  return checkIfIncludes;
   // Використовуємо метод includes(), щоб перевірити, чи входить підрядок subStr в рядок mainStr
 }
 
@@ -75,6 +96,8 @@ console.log(
 // Завдання 7: Напишіть функцію, яка знаходить індекс підрядка в рядку
 
 function findIndexOf(mainStr, subStr) {
+  const findIndexOf = mainStr.indexOf(subStr);
+  return findIndexOf;
   // Використовуємо метод indexOf(), щоб знайти індекс підрядка subStr в рядку mainStr
 }
 
@@ -87,6 +110,8 @@ console.log(
 // Завдання 8: Напишіть функцію, яка знаходить останній індекс підрядка в рядку
 
 function findLastIndexOf(mainStr, subStr) {
+  const findLastIndexOf = mainStr.lastIndexOf(subStr);
+  return findLastIndexOf;
   // Використовуємо метод lastIndexOf(), щоб знайти останній індекс підрядка subStr в рядку mainStr
 }
 
@@ -99,6 +124,8 @@ console.log(
 // Завдання 9: Напишіть функцію, яка перевіряє, чи починається рядок з певного підрядка
 
 function checkIfStartsWith(mainStr, subStr) {
+  const checkIfStartsWith = mainStr.startsWith(subStr);
+  return checkIfStartsWith;
   // Використовуємо метод startsWith(), щоб перевірити, чи починається рядок mainStr з певного підрядка subStr
 }
 
@@ -111,6 +138,8 @@ console.log(
 // Завдання 10: Напишіть функцію, яка перевіряє, чи закінчується рядок певним підрядком
 
 function checkIfEndsWith(mainStr, subStr) {
+  const checkIfEndsWith = mainStr.endsWith(subStr);
+  return checkIfEndsWith;
   // Використовуємо метод endsWith(), щоб перевірити, чи закінчується рядок mainStr певним підрядком subStr
 }
 
